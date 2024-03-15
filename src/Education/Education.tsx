@@ -58,21 +58,21 @@ const Education = () => {
 
   return (
     <motion.div
-      className="flex max-h-screen w-full flex-col space-y-10 overflow-hidden"
+      className="flex max-h-screen w-full flex-col space-y-10 lg:overflow-hidden"
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       exit={{ x: window.innerWidth, opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="m-auto mt-28 font-mono text-6xl font-bold text-chestnut-700">
+      <h1 className="m-auto mt-24 font-mono text-4xl font-bold text-chestnut-700 lg:mt-28 lg:text-6xl">
         Education
       </h1>
-      <ul className="m-auto flex w-3/4 flex-wrap justify-center space-x-10">
+      <ul className="m-auto flex flex-col items-center justify-center lg:w-3/4 lg:flex-row lg:space-x-10">
         {educationList.map((education) => {
           return (
             <li
               className={
-                "mt-4 aspect-[1.75] w-[25vw] rounded-2xl border border-chestnut bg-cordovan-100 text-center font-bold text-white"
+                "mt-4 w-[75vw] rounded-2xl border border-chestnut bg-cordovan-100 text-center font-bold text-white lg:aspect-[4/4] lg:w-[25vw]"
               }
               key={education.id}
             >

@@ -33,15 +33,15 @@ const Project = () => {
       exit={{ x: window.innerWidth, opacity: 0 }}
       transition={{ duration: 0.5 }}
     >
-      <h1 className="m-auto mt-28 font-mono text-6xl font-bold text-chestnut-700">
+      <h1 className="m-auto mt-24 font-mono text-4xl font-bold text-chestnut-700 lg:mt-28 lg:text-6xl">
         Project
       </h1>
-      <ul className="m-auto flex w-3/4 justify-center space-x-10">
+      <ul className="m-auto flex flex-col justify-center space-x-10 lg:w-3/4 lg:flex-row">
         {projectList.map((project) => {
           return (
             <li
               className={
-                "mt-4 aspect-[6/5] w-[25vw] rounded-2xl border border-chestnut bg-cordovan-100 text-center font-bold text-white"
+                "mt-4 w-[75vw] rounded-2xl border border-chestnut bg-cordovan-100 text-center font-bold text-white lg:aspect-[6/5] lg:w-[25vw]"
               }
               key={project.id}
             >

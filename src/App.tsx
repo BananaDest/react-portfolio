@@ -8,9 +8,8 @@ import AnimatedRoutes from "./AnimatedRoutes";
 function App() {
   return (
     <HashRouter>
-      <div className="h-screen w-screen bg-cordovan-100">
+      <div className="min-h-screen w-screen bg-cordovan-100">
         <NavBar />
-
         <AnimatedRoutes />
       </div>
     </HashRouter>

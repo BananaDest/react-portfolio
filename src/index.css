@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body {
-  margin: 0;
+@layer base {
+  body {
+    margin: 0;
+    @apply bg-cordovan-100;
+  }
 }
